@@ -1,0 +1,7 @@
+.blogpost p {
+  padding-bottom: 24px;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
