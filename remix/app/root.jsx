@@ -30,10 +30,6 @@ export default function App() {
         <Header />
         <Outlet />
 
-        <ScrollRestoration />
-
-        <Scripts />
-
         <LiveReload />
         <Footer />
       </body>
