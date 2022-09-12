@@ -19,9 +19,9 @@ git sparse-checkout set gatsby
 
 Once you've cloned this and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server.
 
-    ```shell
-    npm run develop
-    ```
+```shell
+npm run develop
+```
 
 ## Environment Variables
 
@@ -34,16 +34,18 @@ To run this project, you will need to add the following environment variables to
 You will need to set up a free Enterspeed account. You can sign up here: https://app.enterspeed.com/signup
 
 Once you have created your account and created a tenant, you need to configure your tenant by setting up:
-Domains and hostnames
-Environment and environment clients
-Data sources
+
+- Domains and hostnames
+- Environment and environment clients
+- Data sources
+
 You can read more about it in our getting started guide: https://docs.enterspeed.com/getting-started
 
 ### Ingesting dummy data
 
 Once you have created a data source in Enterspeed, you can start ingesting data. This can be done using our API: https://docs.enterspeed.com/api#tag/Ingest
 
-You can find the data used in the demos here: [enterspeed-dummy-data](https://github.com/enterspeedhq/enterspeed-demos/tree/master/enterspeed-dummy-data)
+You can find the data used in the demo here: [DEMO DATA](./DEMO-DATA/)
 
 #### Example ingest
 
@@ -56,3 +58,7 @@ curl --location --request POST 'https://api.enterspeed.com/ingest/v2/UNIQUE-ID' 
   "url": "/blog"
 }'
 ```
+
+### Setting up your schemas in Enterspeed
+
+The schemas used to transform the data in Enterspeed can be found here: [DEMO DATA](./DEMO-DATA/).
