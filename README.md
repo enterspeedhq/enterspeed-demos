@@ -10,22 +10,25 @@ This repo contains example projects built using Enterspeed as a speed layer (hig
 - [nuxt](https://github.com/enterspeedhq/enterspeed-demos/tree/master/nuxt) - ([https://enterspeed-nuxt.netlify.app/](https://enterspeed-nuxt.netlify.app/))
 - [remix](https://github.com/enterspeedhq/enterspeed-demos/tree/master/remix) - ([https://enterspeed-remix.netlify.app/](https://enterspeed-remix.netlify.app/))
 - [sveltekit](https://github.com/enterspeedhq/enterspeed-demos/tree/master/sveltekit) - ([https://enterspeed-sveltekit.netlify.app/](https://enterspeed-sveltekit.netlify.app/))
+- [vanilla-js-google-sheets](https://github.com/enterspeedhq/enterspeed-demos/tree/master/vanilla-js-google-sheets) - ([https://enterspeed-vanilla-js-google-sheets.netlify.app//](https://enterspeed-vanilla-js-google-sheets.netlify.app/))
 
 ## What you'll need
 
 You will need to set up a free Enterspeed account. You can sign up here: https://app.enterspeed.com/signup
 
 Once you have created your account and created a tenant, you need to configure your tenant by setting up:
-Domains and hostnames
-Environment and environment clients
-Data sources
+
+- Domains and hostnames
+- Environment and environment clients
+- Data sources
+
 You can read more about it in our getting started guide: https://docs.enterspeed.com/getting-started
 
 ## Ingesting dummy data
 
 Once you have created a data source in Enterspeed, you can start ingesting data. This can be done using our API: https://docs.enterspeed.com/api#tag/Ingest
 
-You can find the data used in the demos here: [enterspeed-dummy-data](https://github.com/enterspeedhq/enterspeed-demos/tree/master/enterspeed-dummy-data)
+You can find the data used in the demos here in each project's folder.
 
 ### Example ingest
 
