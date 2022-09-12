@@ -1,3 +1,7 @@
+# Next.js demo
+
+**🔗 Live demo: [https://enterspeed-nextjs.netlify.app/](https://enterspeed-nextjs.netlify.app/)**
+
 ## Cloning this demo
 
 To clone a single folder use Git Bash.

@@ -1,6 +1,8 @@
 # Vanilla JavaScript & Google Sheets demo
 
-**👉 This demo was created for the article [Using Google Sheets as your CMS](https://www.enterspeed.com/blog/using-google-sheets-as-your-cms/).**
+**🔗 Live demo: [https://enterspeed-vanilla-js-google-sheets.netlify.app//](https://enterspeed-vanilla-js-google-sheets.netlify.app/)**
+
+**✍ This demo was created for the article: [Using Google Sheets as your CMS](https://www.enterspeed.com/blog/using-google-sheets-as-your-cms/).**
 
 ## Demo data
 

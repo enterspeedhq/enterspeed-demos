@@ -1,5 +1,7 @@
 # Nuxt 3 Demo
 
+**🔗 Live demo: [https://enterspeed-nuxt.netlify.app/](https://enterspeed-nuxt.netlify.app/)**
+
 ## Cloning this demo
 
 To clone a single folder use Git Bash.

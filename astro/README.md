@@ -1,5 +1,7 @@
 # Astro demo
 
+**🔗 Live demo: [https://enterspeed-astro.netlify.app/](https://enterspeed-astro.netlify.app/)**
+
 ## Cloning this demo
 
 To clone a single folder use Git Bash.
