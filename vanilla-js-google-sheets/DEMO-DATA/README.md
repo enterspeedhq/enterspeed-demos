@@ -4,7 +4,7 @@ Demo data that was used for this project.
 
 ## `apps-script.gs`
 
-Google Apps Script used to ingest data into Enterspeed.
+The Google Apps Script used to ingest data into Enterspeed.
 
 ## `movies.csv`
 
