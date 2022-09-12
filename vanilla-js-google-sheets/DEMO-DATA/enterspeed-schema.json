@@ -1,0 +1,27 @@
+{
+  "triggers": {
+    "googleSheets": ["movie"]
+  },
+  "route": {
+    "handles": ["movies"]
+  },
+  "properties": {
+    "movies": {
+      "type": "array",
+      "input": {
+        "$lookup": {
+          "filter": "type eq 'movie'"
+        }
+      },
+      "var": "movie",
+      "items": {
+        "type": "object",
+        "properties": {
+          "movie": {
+            "*": "movie.p"
+          }
+        }
+      }
+    }
+  }
+}

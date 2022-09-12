@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Olsen-banden movie list</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎬</text></svg>"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      fetch("/.netlify/functions/enterspeed")
+        .then((response) => response.json())
+        .then((data) => {
+          const movies = data.data.views.movies.movies;
+
+          movies.forEach((movie) => {
+            const m = movie.movie;
+
+            const card = `
+        <div class="col">
+          <div class="card mb-3" style="max-width: 540px">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="${m.image}" class="img-fluid rounded-start" alt=${m.name} />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">${m.name} (${m.number})</h5>
+                  <p class="card-text">
+                    ${m.description}
+                  </p>
+                  <p class="card-text">
+                    <small class="text-muted">Released in ${m.year}</small>
+                    <small class="text-muted">- <a target="_blank" rel="noopener noreferrer" href=${m.imdb}>See on IMDB</a></small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        `;
+
+            document.getElementById("cards").innerHTML += card;
+          });
+        });
+    </script>
+  </head>
+  <body>
+    <nav class="navbar sticky-top" style="background-color: #a6e9d5">
+      <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1">🎬 Olsen-banden movie list</span>
+      </div>
+    </nav>
+    <div class="container-fluid mt-4" style="background-color: #f8f9fa">
+      <div id="cards" class="row row-cols-1 row-cols-md-3 g-4"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+# dependencies
+/node_modules
+
+# Local Netlify folder
+.netlify
+
+# env files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Prettier
+.prettierignore
