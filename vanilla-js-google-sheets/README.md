@@ -35,6 +35,12 @@ netlify dev
 
 Open up [http://localhost:8888](http://localhost:8888), and you should be ready to go!
 
+## Environment Variables
+
+To run this project, you will need to add the following environment variables to your .env file
+
+`ENTERSPEED_PRODUCTION_ENVIRONMENT_API_KEY`
+
 ## What you'll need
 
 You will need to set up a free Enterspeed account. You can sign up here: https://app.enterspeed.com/signup
