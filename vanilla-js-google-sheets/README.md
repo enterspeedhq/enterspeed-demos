@@ -4,7 +4,7 @@
 
 ## Demo data
 
-Demo data can be found in the folder [DEMO DATA](/DEMO-DATA).
+Demo data can be found in the folder [DEMO DATA](./DEMO-DATA).
 
 ## Cloning this demo
 
