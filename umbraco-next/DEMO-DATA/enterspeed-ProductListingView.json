@@ -1,0 +1,19 @@
+{
+  "triggers": {
+    "demoCMS": ["product"]
+  },
+  "properties": {
+    "name": "{p.productName}",
+    "description": "{p.description}",
+    "price": {
+      "type": "number",
+      "value": "{p.price}"
+    },
+    "href": "{url}",
+    "currency": {
+      "type": "reference",
+      "originId": "{originParentId}",
+      "alias": "currency"
+    }
+  }
+}

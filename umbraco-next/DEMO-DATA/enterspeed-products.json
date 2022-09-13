@@ -1,0 +1,30 @@
+{
+  "triggers": {
+    "demoCMS": ["products"]
+  },
+  "route": {
+    "url": "{url}"
+  },
+  "properties": {
+    "type": "products",
+    "headline": "{p.pageTitle}",
+    "seoMetaDescription": "{p.seoMetaDescription}",
+    "products": {
+      "type": "array",
+      "input": {
+        "$lookup": {
+          "operator": "equals",
+          "sourceEntityProperty": "originParentId",
+          "matchValue": "{originId}",
+          "sourceEntityType": "product"
+        }
+      },
+      "var": "product",
+      "items": {
+        "type": "reference",
+        "gid": "{product.id}",
+        "alias": "productListingView"
+      }
+    }
+  }
+}

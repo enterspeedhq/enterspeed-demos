@@ -1,0 +1,11 @@
+module.exports = {
+  env: {
+    ENTERSPEED_PRODUCTION_ENVIRONMENT_API_KEY:
+      process.env.ENTERSPEED_PRODUCTION_ENVIRONMENT_API_KEY,
+    ENTERSPEED_PREVIEW_ENVIRONMENT_API_KEY:
+      process.env.ENTERSPEED_PREVIEW_ENVIRONMENT_API_KEY,
+    ENTERSPEED_PREVIEW_SECRET: process.env.ENTERSPEED_PREVIEW_SECRET,
+  },
+  reactStrictMode: true,
+  trailingSlash: true,
+};
