@@ -1,0 +1,23 @@
+{
+  "triggers": {
+    "umbraco": ["beer"]
+  },
+  "route": {
+    "url": "{url}"
+  },
+  "actions": [
+    {
+      "type": "process",
+      "originId": {
+        "$exp": "{originParentId}"
+      }
+    }
+  ],
+  "properties": {
+    "type": "beer",
+    "url": "{url}",
+    "content": {
+      "*": "p"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "triggers": {
+    "umbraco": ["beers"]
+  },
+  "route": {
+    "url": "{url}"
+  },
+  "properties": {
+    "type": "beers",
+    "content": {
+      "type": "array",
+      "input": {
+        "$lookup": {
+          "operator": "equals",
+          "sourceEntityProperty": "originParentId",
+          "matchValue": "{originId}"
+        }
+      },
+      "items": {
+        "type": "reference",
+        "alias": "beer",
+        "id": "{item.id}"
+      }
+    }
+  }
+}

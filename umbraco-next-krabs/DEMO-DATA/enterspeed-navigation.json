@@ -1,0 +1,25 @@
+{
+  "triggers": {
+    "umbraco": ["home"]
+  },
+  "route": {
+    "handles": ["navigation-{url}"]
+  },
+  "properties": {
+    "navigationItems": {
+      "type": "array",
+      "input": {
+        "$lookup": {
+          "operator": "equals",
+          "sourceEntityProperty": "originParentId",
+          "matchValue": "{originId}"
+        }
+      },
+      "items": {
+        "type": "reference",
+        "id": "{item.id}",
+        "alias": "navigationItem"
+      }
+    }
+  }
+}

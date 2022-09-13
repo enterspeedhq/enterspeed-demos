@@ -1,0 +1,14 @@
+{
+  "triggers": {
+    "umbraco": ["page"]
+  },
+  "route": {
+    "url": "{url}"
+  },
+  "properties": {
+    "type": "page",
+    "content": {
+      "*": "p"
+    }
+  }
+}

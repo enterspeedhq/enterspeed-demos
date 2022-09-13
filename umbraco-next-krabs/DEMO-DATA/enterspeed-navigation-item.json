@@ -1,0 +1,22 @@
+{
+  "triggers": {
+    "umbraco": ["page", "beers"]
+  },
+  "actions": [
+    {
+      "type": "process",
+      "originId": {
+        "$exp": "{originParentId}"
+      }
+    }
+  ],
+  "properties": {
+    "label": "{p.metaData.name}",
+    "type": "{type}",
+    "href": "{url}",
+    "sortOrder": {
+      "type": "number",
+      "value": "{p.metaData.sortOrder}"
+    }
+  }
+}
