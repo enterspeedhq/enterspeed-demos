@@ -1,0 +1,8 @@
+{
+  "triggers": {
+    "demoCMS": ["products"]
+  },
+  "properties": {
+    "defaultCurrency": "{p.defaultCurrency[0]}"
+  }
+}

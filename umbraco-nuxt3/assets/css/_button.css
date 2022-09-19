@@ -1,0 +1,87 @@
+/**
+ * Base: Buttons
+ */
+
+/* Default button */
+.button {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  background: var(--color-primary);
+  white-space: nowrap;
+  user-select: none;
+  position: relative;
+  font-weight: bold;
+  font-family: var(--base-font-family);
+  transition: background 0.3s, color 0.3s, border-color 0.3s;
+  color: var(--color-white);
+  border: 2px solid transparent;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 14px 30px 14px 30px;
+  border-radius: 999px;
+
+  .icon {
+    margin-left: 45px;
+    width: 16px;
+    height: 10px;
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--color-white);
+    background: color(var(--color-primary) shade(10%));
+    text-decoration: none;
+    outline: none;
+  }
+
+  &[disabled],
+  [disabled] & {
+    cursor: not-allowed;
+  }
+
+  &--primary {
+    border: 2px solid var(--color-primary);
+    background: var(--color-primary);
+
+    &:hover,
+    &:focus {
+      color: var(--color-white);
+      background: color(var(--color-primary) shade(10%));
+    }
+  }
+
+  &--secondary {
+    border: 2px solid var(--color-primary);
+    background: transparent;
+    color: var(--color-primary);
+
+    &:hover,
+    &:focus {
+      color: var(--color-white);
+      background: var(--color-primary);
+    }
+  }
+
+  /* Ghost button */
+  &--ghost {
+    color: var(--color-text);
+    border: solid 1px var(--color-primary);
+    background-color: transparent;
+
+    &:hover,
+    &:focus {
+      color: var(--color-white);
+      background-color: var(--color-primary);
+    }
+  }
+
+  &--block {
+    display: block;
+    width: 100%;
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "triggers": {
+    "demoCMS": ["contentPage"]
+  },
+  "route": {
+    "url": "{url}"
+  },
+  "properties": {
+    "type": "{type}",
+    "headline": "{p.pageTitle}",
+    "seoMetaDescription": "{p.seoMetaDescription}",
+    "blocks": {
+      "type": "array",
+      "input": "{p.contentBlocks}",
+      "items": {
+        "type": "partial",
+        "input": "{item}",
+        "alias": "umbraco-{item.contentType}"
+      }
+    }
+  }
+}

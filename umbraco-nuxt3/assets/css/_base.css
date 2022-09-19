@@ -1,0 +1,19 @@
+/**
+ * Base
+ */
+
+/* Box sizing */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--color-primary-light);
+  font-family: var(--base-font-family);
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-link);
+}
