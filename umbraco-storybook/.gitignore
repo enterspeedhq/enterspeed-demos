@@ -15,6 +15,7 @@
 .DS_Store
 *.pem
 build-storybook.log
+/storybook-static
 
 # debug
 npm-debug.log*
