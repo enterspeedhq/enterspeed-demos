@@ -11,7 +11,7 @@ This repo contains example projects built using Enterspeed as a speed layer (hig
 - [remix](https://github.com/enterspeedhq/enterspeed-demos/tree/master/remix) - ([https://enterspeed-remix.netlify.app/](https://enterspeed-remix.netlify.app/))
 - [sveltekit](https://github.com/enterspeedhq/enterspeed-demos/tree/master/sveltekit) - ([https://enterspeed-sveltekit.netlify.app/](https://enterspeed-sveltekit.netlify.app/))
 - [umbraco-next](https://github.com/enterspeedhq/enterspeed-demos/tree/master/umbraco-next) - ([https://enterspeed-umbraco-nextjs.netlify.app/](https://enterspeed-umbraco-nextjs.netlify.app/))
-- [umbraco-nuxt3](https://github.com/enterspeedhq/enterspeed-demos/tree/master/umbraco-nuxt3) - ([https://enterspeed-umbraco-nuxt3.netlify.app/](https://enterspeed-umbraco-nuxt3.netlify.app/))
+- [umbraco-nuxt](https://github.com/enterspeedhq/enterspeed-demos/tree/master/umbraco-nuxt) - ([https://enterspeed-umbraco-nuxt3.netlify.app/](https://enterspeed-umbraco-nuxt3.netlify.app/))
 - [umbraco-next-krabs](https://github.com/enterspeedhq/enterspeed-demos/tree/master/umbraco-next-krabs) - No demo available
 - [vanilla-js-google-sheets](https://github.com/enterspeedhq/enterspeed-demos/tree/master/vanilla-js-google-sheets) - ([https://enterspeed-vanilla-js-google-sheets.netlify.app/](https://enterspeed-vanilla-js-google-sheets.netlify.app/))
 
