@@ -1,7 +1,5 @@
 # Storybook demo
 
-**🔗 Live demo: [https://enterspeed-storybook.netlify.app/](https://enterspeed-storybook.netlify.app/)**
-
 ## Cloning this demo
 
 To clone a single folder use Git Bash.
