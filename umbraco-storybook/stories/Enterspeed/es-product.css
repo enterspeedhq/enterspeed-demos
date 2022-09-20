@@ -1,0 +1,21 @@
+.es-product {
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  font-family: "Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  max-width: 320px;
+}
+
+.es-product--content {
+  padding: 16px;
+}
+
+.es-product--image {
+  border-radius: 8px 8px 0 0;
+  max-width: 100%;
+}
+
+.es-product--price {
+  color: gray;
+}
