@@ -11,7 +11,8 @@ export default {
       restful: {
         baseURL: "https://delivery.enterspeed.com/v1/?url=",
         headers: {
-          "X-Api-Key": process.env.ENTERSPEED_PRODUCTION_ENVIRONMENT_API_KEY,
+          "X-Api-Key":
+            process.env.STORYBOOK_ENTERSPEED_PRODUCTION_ENVIRONMENT_API_KEY,
         },
       },
     }),

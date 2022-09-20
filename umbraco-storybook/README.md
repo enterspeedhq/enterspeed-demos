@@ -33,7 +33,7 @@ Open [http://localhost:6006/](http://localhost:6006/) with your browser to see t
 
 To run this project, you will need to add the following environment variables to your .env file
 
-`ENTERSPEED_PRODUCTION_ENVIRONMENT_API_KEY`
+`STORYBOOK_ENTERSPEED_PRODUCTION_ENVIRONMENT_API_KEY`
 
 ## What you'll need
 
