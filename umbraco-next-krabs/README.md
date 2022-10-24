@@ -69,9 +69,10 @@ You will also need to run a Umbraco server (this can be done locally). Umbraco c
 
 Once you have created a data source in Enterspeed, you can start ingesting data. This can be done using our Umbraco integration: [https://docs.enterspeed.com/integrations](https://docs.enterspeed.com/integrations)
 
-The demo data used for the Umbraco site can be found here:
+The demo data used for the Umbraco site can be found here: 
+- [Demo data for Umbraco V9](https://www.nuget.org/packages/Enterspeed.Demos.UmbracoCms.V9.MultisiteBeers)
+- [Demo data for Umbraco V10](https://www.nuget.org/packages/Enterspeed.Demos.UmbracoCms.V10.MultisiteBeers)
 
-_`Soon available on NuGet`_
 
 You can find the data used in the demo here: [DEMO DATA](./DEMO-DATA/)
 
