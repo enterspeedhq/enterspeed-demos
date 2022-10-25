@@ -1,0 +1,5 @@
+[build]
+  base = "astro/"
+
+[template.environment]
+ENTERSPEED_PRODUCTION_ENVIRONMENT_API_KEY = "change me for your environment api key"
