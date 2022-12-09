@@ -23,7 +23,7 @@ export default function PostTile ({ post }) {
             cursor: "pointer",
           }}
         >
-          {post.image &&
+          {post.image && post.image.view &&
             <Image
               alt={post.title}
               title={post.title}
