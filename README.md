@@ -14,6 +14,7 @@ This repo contains example projects built using Enterspeed as a speed layer (hig
 - [umbraco-nuxt](https://github.com/enterspeedhq/enterspeed-demos/tree/master/umbraco-nuxt) - ([https://enterspeed-umbraco-nuxt.netlify.app/](https://enterspeed-umbraco-nuxt.netlify.app/))
 - [umbraco-next-krabs](https://github.com/enterspeedhq/enterspeed-demos/tree/master/umbraco-next-krabs) - No demo available
 - [umbraco-storybook](https://github.com/enterspeedhq/enterspeed-demos/tree/master/umbraco-storybook) - ([https://enterspeed-umbraco-storybook.netlify.app/](https://enterspeed-umbraco-storybook.netlify.app/))
+- [vanilla-js](https://github.com/enterspeedhq/enterspeed-demos/tree/master/vanilla-js) - ([https://enterspeed-vanilla-js.netlify.app/](https://enterspeed-vanilla-js.netlify.app/))
 - [vanilla-js-google-sheets](https://github.com/enterspeedhq/enterspeed-demos/tree/master/vanilla-js-google-sheets) - ([https://enterspeed-vanilla-js-google-sheets.netlify.app/](https://enterspeed-vanilla-js-google-sheets.netlify.app/))
 
 ## What you'll need
