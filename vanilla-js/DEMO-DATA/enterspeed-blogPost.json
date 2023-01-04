@@ -1,0 +1,21 @@
+{
+  "triggers": {
+    "postman": ["blogPost"]
+  },
+  "route": {
+    "url": "{url}"
+  },
+  "actions": [
+    {
+      "type": "process",
+      "originId": {
+        "$exp": "{originParentId}"
+      }
+    }
+  ],
+  "properties": {
+    "content": {
+      "*": "p"
+    }
+  }
+}
