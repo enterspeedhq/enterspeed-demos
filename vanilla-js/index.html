@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vanilla JS demo</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/navigo/8.11.1/navigo.min.js"
+    referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+    referrerpolicy="no-referrer" />
+  <style>
+    article p {
+      padding-bottom: 24px;
+    }
+  </style>
+  <script>
+    const router = new Navigo("/");
+
+    const renderPostPage = (postLink) => {
+
+      fetch(`/.netlify/functions/enterspeed?url=/${postLink}`)
+        .then((response) => response.json())
+        .then((data) => {
+
+          const post = data.data.route.content;
+
+          const postPage = `
+            <div class="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-lg md:px-24 lg:px-8">
+              <div class="text-center">
+                  <h1
+                      class="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
+                      ${post.title}
+                  </h1>
+                  <div>
+                      ${post.author.name} - ${post.date}
+                  </div>
+              </div>
+              <img src="${post.featuredImage}" alt"=${post.title}" class="rounded shadow-lg my-8 mx-auto" />
+              <article id="article" class="text-gray-700 text-lg blogpost">
+              </article>
+              <div class="block mt-4 mb-8 text-lg font-bold text-gray-800 hover:text-blue-800">
+                  <a href="/">👈 Go back</a>
+              </div>
+            </div>`
+          document.getElementById("main").innerHTML = postPage;
+          document.getElementById("article").innerHTML = post.content;
+        }
+        )
+    }
+
+    const renderHomePage = () => {
+      fetch("/.netlify/functions/enterspeed?handle=blogList")
+        .then((response) => response.json())
+        .then((data) => {
+          const posts = data.data.views.blogList.content;
+
+          posts.forEach((post) => {
+
+            const singlePost = `
+              <a href="/post${post.url}"
+              class="overflow-hidden transition-shadow duration-300 bg-white rounded border hover:text-blue-800 hover:bg-gray-50"
+              data-navigo>
+                <img src="${post.thumbnail}" class="object-cover w-full h-64" alt="${post.title}" />
+                <div class="p-5 ">
+                    <p class="mb-3 text-xs font-semibold tracking-wide uppercase">
+                        <span class="transition-colors duration-200 text-blue-gray-900">
+                            ${post.author.name}
+                        </span>
+                        <span class="text-gray-600">
+                            — ${post.date}
+                        </span>
+                    </p>
+                    <div class="inline-block mb-3 text-2xl font-bold leading-5 transition-colors duration-200">
+                        ${post.title}
+                    </div>
+                    <p class="mb-2 text-gray-700">${post.excerpt}</p>
+                </div>
+              </a>`
+            document.getElementById("posts").innerHTML += singlePost
+          })
+        }
+        ).then(() => {
+          router.updatePageLinks()
+          router.on('/post/:postLink', ({ data }) => {
+            renderPostPage(data.postLink);
+          })
+            .resolve()
+        });
+    }
+
+    renderHomePage();
+  </script>
+</head>
+
+<body>
+  <div class="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+    <div class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
+      <a href="/">Enterspeed ♥ Vanilla JS</a>
+    </div>
+  </div>
+
+
+  <div class="bg-gray-200">
+    <div id="main" class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+      <div id="posts" class="grid gap-8 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full"></div>
+    </div>
+  </div>
+
+
+  <div class="text-center px-t py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+    Demo by
+    <a target="_blank" rel="noreferrer noopener" href="https://enterspeed.com" class="hover:text-blue-800">
+      Enterspeed
+    </a>
+  </div>
+</body>
+
+</html>
