@@ -4,6 +4,6 @@
     "node-fetch": "^3.2.10"
   },
   "devDependencies": {
-    "netlify-cli": "^11.7.1"
+    "netlify-cli": "^12.7.0"
   }
 }
