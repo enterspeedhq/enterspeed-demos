@@ -1,0 +1,19 @@
+{
+  "triggers": {
+    "postman": ["product", "ppp-product"]
+  },
+  "route": {
+    "url": "{url}"
+  },
+  "properties": {
+    "title": "{p.title}",
+    "content": "{p.content}",
+    "ppp": {
+      "type": "boolean",
+      "value": "{p.ppp}"
+    },
+    "price": {
+      "*": "p.price"
+    }
+  }
+}
