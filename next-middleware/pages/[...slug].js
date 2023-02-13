@@ -2,6 +2,15 @@ import useHydrated from "../hooks/useHydrated";
 import Head from "next/head";
 import Link from "next/link";
 
+export async function getStaticProps() {
+  return {
+    props: {
+      enterspeedContent,
+      country,
+    },
+  };
+}
+
 const Page = ({ enterspeedContent, country }) => {
   const hydrated = useHydrated();
   if (hydrated) {
