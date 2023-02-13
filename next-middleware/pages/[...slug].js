@@ -1,6 +1,22 @@
 import useHydrated from "../hooks/useHydrated";
 import Head from "next/head";
 import Link from "next/link";
+import { getRoutes } from "lib/enterspeed";
+
+export async function getStaticPaths() {
+  const routes = await getRoutes();
+
+  return {
+    paths: routes.results.map((route) => route.url),
+    fallback: false,
+  };
+}
+
+export async function getStaticProps() {
+  return {
+    props: {},
+  };
+}
 
 const Page = ({ enterspeedContent, country }) => {
   const hydrated = useHydrated();
