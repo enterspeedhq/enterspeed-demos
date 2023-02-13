@@ -1,0 +1,16 @@
+{
+  "triggers": {
+    "postman": ["article"]
+  },
+  "route": {
+    "url": "{url}"
+  },
+  "properties": {
+    "title": "{p.title}",
+    "content": "{p.content}",
+    "premium": {
+      "type": "boolean",
+      "value": "{p.premium}"
+    }
+  }
+}

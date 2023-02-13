@@ -1,0 +1,172 @@
+{
+  "info": {
+    "_postman_id": "ed3403cf-3ab1-46e6-8dc2-7ca22d43b4cc",
+    "name": "Next.js Middleware demo",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "19587997"
+  },
+  "item": [
+    {
+      "name": "Articles",
+      "item": [
+        {
+          "name": "My free article",
+          "request": {
+            "auth": {
+              "type": "apikey",
+              "apikey": [
+                {
+                  "key": "value",
+                  "value": "[INSERT-YOUR-OWN-API-KEY]",
+                  "type": "string"
+                },
+                {
+                  "key": "key",
+                  "value": "X-Api-Key",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"type\": \"article\",\r\n  \"url\": \"/my-free-article\",\r\n  \"originParentId\": \"1\",\r\n  \"properties\": {\r\n      \"title\": \"My free article\",\r\n      \"content\": \"This is my free article 👋\"\r\n  }\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://api.enterspeed.com/ingest/v2/2",
+              "protocol": "https",
+              "host": ["api", "enterspeed", "com"],
+              "path": ["ingest", "v2", "2"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "My premium article",
+          "request": {
+            "auth": {
+              "type": "apikey",
+              "apikey": [
+                {
+                  "key": "value",
+                  "value": "[INSERT-YOUR-OWN-API-KEY]",
+                  "type": "string"
+                },
+                {
+                  "key": "key",
+                  "value": "X-Api-Key",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"type\": \"article\",\r\n  \"url\": \"/my-premium-article\",\r\n  \"originParentId\": \"1\",\r\n  \"properties\": {\r\n    \"title\": \"My premium article\",\r\n    \"content\": \"This is my premium article 💰\",\r\n    \"premium\": true\r\n  }\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://api.enterspeed.com/ingest/v2/3",
+              "protocol": "https",
+              "host": ["api", "enterspeed", "com"],
+              "path": ["ingest", "v2", "3"]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Products",
+      "item": [
+        {
+          "name": "My product",
+          "request": {
+            "auth": {
+              "type": "apikey",
+              "apikey": [
+                {
+                  "key": "value",
+                  "value": "[INSERT-YOUR-OWN-API-KEY]",
+                  "type": "string"
+                },
+                {
+                  "key": "key",
+                  "value": "X-Api-Key",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"type\": \"product\",\r\n  \"url\": \"/my-product\",\r\n  \"originParentId\": \"1\",\r\n  \"properties\": {\r\n    \"title\": \"My product\",\r\n    \"content\": \"This is my product with a hidden price\",\r\n    \"price\": 9001\r\n  }\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://api.enterspeed.com/ingest/v2/4",
+              "protocol": "https",
+              "host": ["api", "enterspeed", "com"],
+              "path": ["ingest", "v2", "4"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "My PPP product",
+          "request": {
+            "auth": {
+              "type": "apikey",
+              "apikey": [
+                {
+                  "key": "value",
+                  "value": "[INSERT-YOUR-OWN-API-KEY]",
+                  "type": "string"
+                },
+                {
+                  "key": "key",
+                  "value": "X-Api-Key",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"type\": \"ppp-product\",\r\n  \"url\": \"/my-ppp-product\",\r\n  \"originParentId\": \"1\",\r\n  \"properties\": {\r\n    \"title\": \"My PPP product\",\r\n    \"content\": \"This is my Power Parity Pricing product with a custom price.\",\r\n    \"ppp\": true,\r\n    \"price\": {\r\n        \"DK\": \"50 DKK\",\r\n        \"US\": \"20 $\",\r\n        \"UK\": \"15 £\"\r\n    }\r\n  }\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://api.enterspeed.com/ingest/v2/5",
+              "protocol": "https",
+              "host": ["api", "enterspeed", "com"],
+              "path": ["ingest", "v2", "5"]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
