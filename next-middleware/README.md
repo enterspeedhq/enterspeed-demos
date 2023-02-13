@@ -1,6 +1,6 @@
 # Next.js Middleware demo
 
-**🔗 Live demo: [enterspeed-next-middleware.netlify.app](enterspeed-next-middleware.netlify.app)**
+**🔗 Live demo: [https://enterspeed-next-middleware.netlify.app/](https://enterspeed-next-middleware.netlify.app/)**
 
 ## Cloning this demo
 

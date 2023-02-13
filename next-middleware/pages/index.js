@@ -1,4 +1,3 @@
-import Head from "next/head";
 import { getRoutes } from "lib/enterspeed";
 
 export async function getServerSideProps() {
