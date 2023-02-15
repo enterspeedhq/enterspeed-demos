@@ -7,6 +7,7 @@ This repo contains example projects built using Enterspeed as a speed layer (hig
 - [astro](https://github.com/enterspeedhq/enterspeed-demos/tree/master/astro) - ([https://enterspeed-astro.netlify.app/](https://enterspeed-astro.netlify.app/))
 - [gatsby](https://github.com/enterspeedhq/enterspeed-demos/tree/master/gatsby) - ([https://enterspeed-gatsby.netlify.app/](https://enterspeed-gatsby.netlify.app/))
 - [next](https://github.com/enterspeedhq/enterspeed-demos/tree/master/next) - ([https://enterspeed-nextjs.netlify.app/](https://enterspeed-nextjs.netlify.app/))
+- [next middleware](https://github.com/enterspeedhq/enterspeed-demos/tree/master/next-middleware) - ([https://enterspeed-next-middleware.netlify.app/](https://enterspeed-next-middleware.netlify.app/))
 - [nuxt](https://github.com/enterspeedhq/enterspeed-demos/tree/master/nuxt) - ([https://enterspeed-nuxt.netlify.app/](https://enterspeed-nuxt.netlify.app/))
 - [remix](https://github.com/enterspeedhq/enterspeed-demos/tree/master/remix) - ([https://enterspeed-remix.netlify.app/](https://enterspeed-remix.netlify.app/))
 - [sveltekit](https://github.com/enterspeedhq/enterspeed-demos/tree/master/sveltekit) - ([https://enterspeed-sveltekit.netlify.app/](https://enterspeed-sveltekit.netlify.app/))
