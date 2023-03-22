@@ -12,8 +12,4 @@ The data used in the Google Sheet document.
 
 ## `enterspeed-movie.json`
 
-The schema used in Enterspeed to transform the data, creating the **movie list**. Read more about transforming in Enterspeed [here](https://docs.enterspeed.com/transform).
-
-## `enterspeed-movie.json`
-
 The schema used in Enterspeed to transform the data, creating the **single movie**. Read more about transforming in Enterspeed [here](https://docs.enterspeed.com/transform).
