@@ -14,6 +14,7 @@ function ingestToEnterspeed() {
       const payload = {
         'type': 'movie',
         'url': '/olsen-banden-' + sheet.getRange('A' + rowNumber).getValue(),
+        'originParentId': 'movies',
         'properties': {
           'number': sheet.getRange('A' + rowNumber).getValue(),
           'name': sheet.getRange('B' + rowNumber).getValue(),
