@@ -1,0 +1,33 @@
+{
+	"triggers": {
+		"googleSheets": [
+			"movies"
+		]
+	},
+	"route": {
+		"handles": [
+			"movies"
+		]
+	},
+	"properties": {
+		"movies": {
+			"type": "array",
+			"input": {
+				"$lookup": {
+					"operator": "equals",
+					"sourceEntityProperty": "originParentId",
+					"matchValue": "{originId}"
+				}
+			},
+			"var": "movie",
+			"items": {
+				"type": "object",
+				"properties": {
+					"movie": {
+						"*": "movie.p"
+					}
+				}
+			}
+		}
+	}
+}
