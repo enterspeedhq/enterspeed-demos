@@ -10,6 +10,6 @@ The Google Apps Script used to ingest data into Enterspeed.
 
 The data used in the Google Sheet document.
 
-## `enterspeed-movie.json`
+## `enterspeed-movies.json`
 
-The schema used in Enterspeed to transform the data, creating the **single movie**. Read more about transforming in Enterspeed [here](https://docs.enterspeed.com/transform).
+The schema used in Enterspeed to transform the data, creating the **movies collection**. Read more about transforming in Enterspeed [here](https://docs.enterspeed.com/transform).
