@@ -12,11 +12,18 @@ export default function handler(req, res) {
   // Set the Preview context to true, so we can access it via getStaticProps
   res.setPreviewData({});
 
+
+  // If the token is invalid an error will occur
+  let path = ""
+  if (req.query.slug !== undefined) {
+    path = `/${req.query.slug}`;
+  }
+
   // Redirect to root. We set a query string parameter so we can check if the
   // preview is enabled. This is used in _app.js in getInitialProps.
   // Since CSR components can't access the Preview context,
   // we also manage preview state via session storage.
   res.redirect(
-    `/?preview=true&secret=${process.env.ENTERSPEED_PREVIEW_SECRET}`
+    `${path}/?preview=true&secret=${process.env.ENTERSPEED_PREVIEW_SECRET}`
   );
 }
