@@ -60,8 +60,7 @@ Once you have created a data source in Enterspeed, you can start ingesting data.
 
 The demo data used for the Umbraco site can be found here:
 
-- [Umbraco V10 - NuGet](https://www.nuget.org/packages/Enterspeed.Demos.UmbracoCms.V10.FairyTales)
-- [Umbraco V9 - NuGet](https://www.nuget.org/packages/Enterspeed.Demos.UmbracoCms.V9.FairyTales)
+- [Umbraco V9+ - NuGet](https://www.nuget.org/packages/Enterspeed.Demos.UmbracoCms.FairyTales)
 
 **💡 TIP: If you don't want to set up a Umbraco site, you can use our demo data. When creating a new tenant in Enterspeed choose `Pre-populate with demo data`.**
 
