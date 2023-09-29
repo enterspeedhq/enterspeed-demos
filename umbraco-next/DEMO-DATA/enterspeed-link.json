@@ -1,8 +1,0 @@
-{
-  "triggers": {
-    "demoCMS": ["contentPage", "product", "home"]
-  },
-  "properties": {
-    "url": "{url}"
-  }
-}

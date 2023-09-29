@@ -6,13 +6,13 @@ Demo data that was used for this project.
 
 The schema used in Enterspeed to transform the dataRead more about transforming in Enterspeed [here](https://docs.enterspeed.com/transform).
 
-- `enterspeed-contentPage.json`
-- `enterspeed-curreny.json`
-- `enterspeed-home.json`
-- `enterspeed-link.json`
-- `enterspeed-navigation.json`
-- `enterspeed-navigationItem.json`
-- `enterspeed-partial-umbraco-blockText.json`
-- `enterspeed-product.json`
-- `enterspeed-ProductListingView.json`
-- `enterspeed-products.json`
+- `enterspeed-contentPage.js`
+- `enterspeed-curreny.js`
+- `enterspeed-home.js`
+- `enterspeed-link.js`
+- `enterspeed-navigation.js`
+- `enterspeed-navigationItem.js`
+- `enterspeed-partial-umbraco-blockText.js`
+- `enterspeed-product.js`
+- `enterspeed-ProductListingView.js`
+- `enterspeed-products.js`
